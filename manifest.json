@@ -1,0 +1,30 @@
+{
+	"name":"ClickToCall",
+	"version":"1.0",
+	"manifest_version": 2,
+	"description":"Les numéros de téléphone affichés sur la page pourront être appelé via un simple clic",
+	"permissions": [
+	    "tabs",
+	    "<all_urls>"
+	],
+    "background": {
+        "scripts": [
+        	"jquery-1.11.1.min.js",
+        	"messages.js",
+        	"bbox-api.js",
+            "background.js"
+        ]
+    },
+	"content_scripts": [
+	    {
+	     "matches":  ["http://*/*","https://*/*"],
+	      "js": ["jquery-1.11.1.min.js","jquery.validate.js","bbox-common.js","bbox-forms.js","bbox-api.js","messages.js"],
+	      "css": ["master.css"],
+	      "run_at": "document_end"
+	    }
+	],
+    "browser_action":
+	{
+		"default_icon": "icon.png"
+	}
+}

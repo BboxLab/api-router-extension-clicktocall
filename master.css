@@ -1,0 +1,275 @@
+.bouygues-clic-to-call .md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	/* centrer la boite modale dans la fenêtre */
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.bouygues-clic-to-call .md-show {
+	visibility: visible;
+}
+
+.bouygues-clic-to-call .md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(244,241,238,0.9); /*rgba(0,0,0,0.6);*/
+}
+
+.bouygues-clic-to-call .md-show ~ .md-overlay {
+	opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	visibility: visible;
+}
+
+.bouygues-clic-to-call .md-content{
+	display:block;
+	color: #565656;
+	background: #ffffff;
+	margin: 0 auto;
+	padding:32px;
+}
+
+.bouygues-clic-to-call .md-btn-container{
+	display:block;
+	width:60%; 
+	margin:8px auto;
+	padding:8px 0 32px 0;
+}
+
+.bouygues-clic-to-call .md-transition .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.bouygues-clic-to-call .md-transition.md-show .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.bouygues-clic-to-call .fw-rule-item .text-input:disabled{
+	border:none;
+	font-weight:bold;
+}
+
+.bouygues-clic-to-call .fw-rule-item-left{
+	padding:0 0 0 16px;
+}
+
+.bouygues-clic-to-call .fw-rule-item-right{
+	padding:0 16px 0 0 ;
+}
+
+.bouygues-clic-to-call .fw-rule-item-center{
+	margin:auto;
+}
+
+.bouygues-clic-to-call .fw-rule-item a{
+	font-size:12px;
+	line-height:18px;
+	text-transform:uppercase;
+	color:#737373;
+	text-decoration:none;
+}
+
+.bouygues-clic-to-call .fw-rule-item a:hover{
+	text-decoration:underline;
+}
+
+.bouygues-clic-to-call .md-modal h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+	color:#448a2b;
+	line-height:32px;
+	margin:6px 0 0 0;
+	
+}
+
+.bouygues-clic-to-call .md-modal p{
+	font-size:14px;
+	line-height:18px;
+	margin:6px 0;
+}
+.bouygues-clic-to-call .text-input{
+  	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 25px;
+	background-color: #ffffff;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 25px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border:1px solid #aaaaaa;
+	padding: 0 6px;
+	
+	/* fontes */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#565656;
+	font-weight:300;
+}
+
+.bouygues-clic-to-call .alert .text-input{
+	border:1px solid #e06565;
+}
+
+.bouygues-clic-to-call .text-input::-webkit-input-placeholder {
+   color:#bbbbbb;
+}
+
+.bouygues-clic-to-call .text-input:-moz-placeholder { /* Firefox 18- */
+   color:#bbbbbb;  
+}
+
+.bouygues-clic-to-call .text-input::-moz-placeholder {  /* Firefox 19+ */
+   color:#bbbbbb;  
+}
+
+.bouygues-clic-to-call .text-input:-ms-input-placeholder {  
+   color:#bbbbbb;  
+}
+
+.bouygues-clic-to-call .text-input:hover{
+	border:1px solid #478f2d;
+}
+
+.bouygues-clic-to-call .text-input:focus{
+	outline:none;
+	background-color:#ffffff;
+	border: 1px solid #478f2d;
+}
+
+.bouygues-clic-to-call .btn-action {
+	border: none;
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#ffffff;
+	background:#2b8058;
+	cursor: pointer;
+	height:40px;
+	line-height:40px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 300;
+	outline: none;
+	text-align:center;
+}
+
+.bouygues-clic-to-call .btn-action:hover{
+	background:#565656;
+}
+
+.bouygues-clic-to-call .cbox-container{
+	display:block;
+	margin-top:6px;
+	/* fontes */
+	font-size:11px;
+	line-height:28px;
+	text-transform:uppercase;
+	font-weight:100;
+}
+.bouygues-clic-to-call .cbox {
+	display:inline-block;
+	width: 22px;
+	height: 22px;
+	background: #ffffff;
+	position: relative;
+	border:1px solid #aaaaaa;
+	margin:0;
+}
+
+.bouygues-clic-to-call .cbox label {
+  	background:#f4f1ee;
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 1px;
+	top: 1px;
+}
+
+.bouygues-clic-to-call .cbox label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #257eb2;
+	top:0;
+	left:0;
+}
+
+.bouygues-clic-to-call .cbox label:hover::after {
+	opacity: 0.3;
+}
+
+.bouygues-clic-to-call .cbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.bouygues-clic-to-call .panel-small .clic-to-call{
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+	text-align:left;
+	margin-left:48px;
+}
+
+.bouygues-clic-to-call .panel-small .clic-to-call:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+.bouygues-clic-to-call .panel-large .clic-to-call{
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+	text-align:left;
+	margin-left:96px;
+}
+
+.bouygues-clic-to-call .panel-large .clic-to-call:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.bouygues-clic-to-call .clic-to-call{
+	cursor: url('http://bbox/img/call-picto.png'), pointer;
+	padding-left:18px;
+	background:url(http://bbox/img/call-picto.png) center left no-repeat;
+}
+.bouygues-clic-to-call .clic-to-call:hover{
+	text-decoration : underline;
+}
